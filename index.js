@@ -50,7 +50,7 @@ Promise.all(promiseArray)
       shell.cd(folder);
       shell.exec('npm audit fix');
       shell.exec('git add .');
-      shell.exec(`git commit -m "automated vulnerability patching on ${new Date()}`);
+      shell.exec(`git commit -m "automated vulnerability patching on ${new Date()}"`);
       shell.exec('git push origin master');
       shell.cd('..');
     })
