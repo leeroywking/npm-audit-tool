@@ -8,7 +8,11 @@ const token = require('./.env.js')
 
 const superagent = require('superagent');
 const fs = require('fs');
+
+// these are the usernames you can find them in the url for any repo you control 
+// for example here https://github.com/leeroywking/npm-audit-tool the username is leeroywking 
 const usernames = ['leeroywking-401-advanced-javascript', 'leeroywking', 'storyadventure', 'fmla-leave-assistant'];
+
 const shell = require('shelljs');
 let urlArray = [];
 let promiseArray = [];
@@ -29,7 +33,7 @@ shell.cd('repo-folder');
 
 Promise.all(promiseArray)
   .then(promises => {
-    fs.writeFile(`./urlList.txt`, urlArray.join(''), (err) => {
+    fs.writeFile(`./repo-folder/urlList.txt`, urlArray.join(''), (err) => {
       if (err) { throw err; }
       console.log('The file has been saved!')
       return true

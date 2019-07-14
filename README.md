@@ -11,7 +11,7 @@
 
 ## Instructions for use 
 * clone this repo down to your system
-* mkdir a garbage folder for the repos to clone down into for example 
+* add the usernames for all the organizations you want updated 
 * then cd into that directory
 * run index from within that garbage folder
 * below is full list of commands
