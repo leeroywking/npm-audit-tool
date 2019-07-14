@@ -7,6 +7,13 @@
 * non-risk adverse mindset
 * nodejs/npm on your system already
 * time to let it run 
+* this tool is hacky
+  * Duplicate names are not handled well ATT
+  * if this applies to you then do it for each org 1 at a time
+  * this will hit the github api a fair amount
+  * this takes a really long time to run
+  * these make commits to your master branch directly
+  * use at your own risk
 
 
 ## Instructions for use 

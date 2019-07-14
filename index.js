@@ -11,7 +11,7 @@ const fs = require('fs');
 
 // these are the usernames you can find them in the url for any repo you control 
 // for example here https://github.com/leeroywking/npm-audit-tool the username is leeroywking 
-const usernames = ['leeroywking-401-advanced-javascript', 'leeroywking', 'storyadventure', 'fmla-leave-assistant'];
+const usernames = ['leeroywking-401-advanced-javascript', 'leeroywking'];
 
 const shell = require('shelljs');
 let urlArray = [];
@@ -29,6 +29,7 @@ usernames.forEach(user => {
         urlArray.push(datum.url.replace(/api\./, '').replace(/repos\//, '') + '.git\n')))
   )
 })
+
 shell.cd('repo-folder');
 
 Promise.all(promiseArray)
@@ -57,3 +58,4 @@ Promise.all(promiseArray)
   })
   .catch(err => console.error(err))
 
+  shell.cd('..');
