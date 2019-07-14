@@ -18,14 +18,14 @@
 
 ## Instructions for use 
 * clone this repo down to your system
-* add the usernames for all the organizations you want updated 
+* ensure your local git configure is set up so that you do not need to enter username/email each time
+* add the usernames for all the organizations you want updated
 * then cd into that directory
 * run index from within that garbage folder
-* below is full list of commands
+* below is full list of commands needed to start the automation
 
 ```
-git clone 
-mkdir garbage
-cd garbage
+git clone https://github.com/leeroywking/npm-audit-tool.git
+cd repo-folder
 node ../index.js
 ```

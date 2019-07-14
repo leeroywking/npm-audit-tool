@@ -57,4 +57,3 @@ Promise.all(promiseArray)
   })
   .catch(err => console.error(err))
 
-  shell.cd('..');
