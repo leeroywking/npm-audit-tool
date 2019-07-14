@@ -4,7 +4,7 @@
 ## Requirements
 * github account with potential vulnerabilities 
 * desire to fix those vulnerabilities
-* personal access token for github account
+* personal access token for github account (this is optional)
 * non-risk adverse mindset
 * nodejs/npm on your system already
 * time to let it run 

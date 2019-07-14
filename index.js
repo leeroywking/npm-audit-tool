@@ -1,5 +1,5 @@
 'use strict'
-const token = require('./.env.js')
+// const token = require('./.env.js')
 //contents of this file are a single line in this syntax
 // module.exports = 'THIS_IS_A_GITHUB_PERSONAL_ACCESS_TOKEN'
 //this is necessary if you have a large number of repos instructions for generating one of these can be found here 
