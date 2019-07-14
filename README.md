@@ -12,8 +12,7 @@
   * if this applies to you then do it for each org 1 at a time
   * this will hit the github api a fair amount
   * this takes a really long time to run
-  * these make commits to your master branch directly
-  * use at your own risk
+  * these make commits to your master
 
 
 ## Instructions for use 

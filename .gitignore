@@ -1,10 +1,11 @@
 # 401 JS
 db
-.env.js
 .env
 temp
 build
-./repo-folder/*
+.env.js
+
+repo-folder/*
 
 # Created by https://www.gitignore.io/api/vim,osx,node,linux,windows
 ### Linux ###
