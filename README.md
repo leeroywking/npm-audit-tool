@@ -1,4 +1,5 @@
 # NPM Audit fixer
+## Primary use-case is students or other people with a large number of low-impact repos for which you want to automate npm audit fixes
 
 ## Requirements
 * github account with potential vulnerabilities 

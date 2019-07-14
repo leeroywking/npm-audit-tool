@@ -16,7 +16,7 @@ const usernames = ['leeroywking-401-advanced-javascript', 'leeroywking'];
 const shell = require('shelljs');
 let urlArray = [];
 let promiseArray = [];
-let folderArray = [];
+let repoArray = [];
 
 
 usernames.forEach(user => {
@@ -30,11 +30,10 @@ usernames.forEach(user => {
   )
 })
 
-shell.cd('./repo-folder');
 
 Promise.all(promiseArray)
   .then(promises => {
-    fs.writeFile(`./repo-folder/urlList.txt`, urlArray.join(''), (err) => {
+    fs.writeFile(`./urlList.txt`, urlArray.join(''), (err) => {
       if (err) { throw err; }
       console.log('The file has been saved!')
       return true
@@ -42,17 +41,17 @@ Promise.all(promiseArray)
   })
   .then(variable => {
     urlArray.forEach(url => {
-      folderArray.push(url.split('/')[4].split('.')[0])
-      shell.exec(`git clone ${url}`);
+      repoArray.push(url.split('/')[4].split('.')[0])
+      shell.exec(`git clone ${url} `);
     })
   })
   .then(after => {
-    folderArray.forEach(folder =>{
-      shell.cd(folder);
-      shell.exec('npm audit fix');
-      shell.exec('git add .');
-      shell.exec(`git commit -m "automated vulnerability patching on ${new Date()}"`);
-      shell.exec('git push origin master');
+    repoArray.forEach(repo =>{
+      shell.cd(repo);
+      shell.exec('npm audit fix ');
+      shell.exec('git add . ');
+      shell.exec(`git commit -m "automated vulnerability patching on ${new Date()}" `);
+      shell.exec('git push origin master ');
       shell.cd('..');
     })
   })
