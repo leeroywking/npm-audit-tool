@@ -1,0 +1,30 @@
+{
+  "name": "npm-audit-tool",
+  "version": "1.0.0",
+  "description": "Simple tool to fix npm audit failures for all repos given user owns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeroywking/npm-audit-tool.git"
+  },
+  "keywords": [
+    "npm",
+    "audit",
+    "fixer",
+    "gitguardian"
+  ],
+  "author": "Lee-Roy King",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leeroywking/npm-audit-tool/issues"
+  },
+  "homepage": "https://github.com/leeroywking/npm-audit-tool#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "shelljs": "^0.8.3",
+    "superagent": "^5.1.0"
+  }
+}
