@@ -23,7 +23,8 @@ usernames.forEach(user => {
   promiseArray.push(superagent.get(`https://api.github.com/users/${user}/repos`)
     .set('User-Agent', `${user}`)
     // this authorization line is necessary if you want to make a larger number of requests
-    .set('Authorization', `token ${token}`)
+    // if you get a failure message that mentions being throttled you will need this line
+    // .set('Authorization', `token ${token}`)
     .then(data =>
       data.body.forEach(datum =>
         urlArray.push(datum.url.replace(/api\./, '').replace(/repos\//, '') + '.git\n')))
