@@ -27,5 +27,9 @@
 ```
 git clone https://github.com/leeroywking/npm-audit-tool.git
 cd repo-folder
+```
+
+now open the index.js file up in your editor of choice and modify the values in the array on line 14
+```
 node ../index.js
 ```
