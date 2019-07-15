@@ -26,6 +26,8 @@
 
 ```
 git clone https://github.com/leeroywking/npm-audit-tool.git
+cd npm-audit-tool
+npm i
 cd repo-folder
 ```
 
