@@ -11,7 +11,7 @@ const fs = require('fs');
 
 // these are the usernames you can find them in the url for any repo you control 
 // for example here https://github.com/leeroywking/npm-audit-tool the username is leeroywking 
-const usernames = ['leeroywking-401-advanced-javascript', 'leeroywking'];
+const usernames = ['leeroywking-401-advanced-javascript', 'leeroywking','leeroywking-schoolin'];
 
 const shell = require('shelljs');
 let urlArray = [];
