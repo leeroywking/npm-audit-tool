@@ -24,7 +24,7 @@
   "homepage": "https://github.com/leeroywking/npm-audit-tool#readme",
   "dependencies": {
     "fs": "0.0.1-security",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "superagent": "^5.1.0"
   }
 }
